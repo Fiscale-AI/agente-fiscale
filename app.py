@@ -7,6 +7,13 @@ import os
 
 load_dotenv()
 
+# Legge la API key dal file .env in locale o dai secrets di Streamlit Cloud
+if "ANTHROPIC_API_KEY" in st.secrets:
+    os.environ["ANTHROPIC_API_KEY"] = st.secrets["ANTHROPIC_API_KEY"]
+
+client = Anthropic()
+load_dotenv()
+
 client = Anthropic()
 
 SYSTEM_PROMPT = """Sei un agente fiscale specializzato nel supporto ai contribuenti italiani che devono compilare la dichiarazione dei redditi.
