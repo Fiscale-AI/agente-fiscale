@@ -438,6 +438,23 @@ PROFILI = {
 
 st.set_page_config(page_title="Agente Fiscale Italiano", page_icon="🇮🇹", layout="wide")
 
+# PROTEZIONE ACCESSO - password semplice per limitare l'uso ai soli tester invitati
+if "autenticato" not in st.session_state:
+    st.session_state.autenticato = False
+
+if not st.session_state.autenticato:
+    st.title("🇮🇹 Agente Fiscale Italiano")
+    st.caption("Accesso riservato — versione di test")
+    pwd = st.text_input("Password di accesso", type="password")
+    if st.button("Entra"):
+        password_corretta = st.secrets.get("APP_PASSWORD", "")
+        if pwd == password_corretta and password_corretta != "":
+            st.session_state.autenticato = True
+            st.rerun()
+        else:
+            st.error("Password non corretta.")
+    st.stop()
+
 if "profilo" not in st.session_state:
     st.session_state.profilo = None
 
@@ -465,6 +482,9 @@ else:
         st.session_state.messages = []
         st.session_state.started = False
         st.session_state.riepilogo = None
+
+    LIMITE_MESSAGGI = 40
+    num_messaggi_utente = sum(1 for m in st.session_state.messages if m["role"] == "user")
 
     st.title(f"{profilo['icona']} {profilo['nome']}")
     if st.button("← Cambia profilo"):
@@ -497,7 +517,9 @@ else:
         with st.chat_message(message["role"]):
             st.markdown(clean_text(message["content"]))
 
-    if prompt := st.chat_input("Scrivi qui..."):
+    if num_messaggi_utente >= LIMITE_MESSAGGI:
+        st.warning("⚠️ Hai raggiunto il limite di messaggi per questa sessione di test. Per continuare, clicca su **Cambia profilo** qui sopra e avvia una nuova conversazione.")
+    elif prompt := st.chat_input("Scrivi qui..."):
         st.session_state.messages.append({"role": "user", "content": prompt})
         with st.chat_message("user"):
             st.markdown(prompt)
