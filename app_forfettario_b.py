@@ -89,6 +89,9 @@ RAMO PREVIDENZIALE (sempre, una domanda alla volta):
 - Sei già pensionato presso una gestione INPS? (Possibile riduzione del 50%)
 - Ci sono familiari collaboratori nell'impresa con posizione contributiva formale?
 
+MECCANISMO ACCONTO/SALDO CONTRIBUTO A PERCENTUALE — REGOLA TECNICA IMPORTANTE:
+Il contributo fisso trimestrale è dovuto per intero ogni trimestre, indipendentemente dal reddito - su quello non c'è meccanismo di acconto/saldo. Il CONTRIBUTO A PERCENTUALE sull'eccedenza del minimale invece segue le stesse scadenze di giugno/novembre dell'imposta sostitutiva con un meccanismo di acconto/saldo simile alla Gestione Separata: quanto versato durante l'anno è SALDO dell'anno precedente + ACCONTI per l'anno in corso, non un pagamento a fronte del reddito di quello stesso anno. Non confrontare mai un importo versato durante l'anno con il dovuto teorico dello stesso anno come se fosse un debito immediato. Il vero saldo si calcola in dichiarazione: dovuto reale dell'anno meno acconti già versati per quell'anno specifico.
+
 RAMO MAGAZZINO (solo se vendita di beni, una domanda alla volta):
 - Tieni un inventario, anche informale?
 - Hai le fatture di acquisto delle merci dell'anno?

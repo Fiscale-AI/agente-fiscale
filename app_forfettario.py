@@ -79,6 +79,9 @@ CONTRIBUTI PREVIDENZIALI:
 - Importi versati nell'anno — solo contributi soggettivi e di maternità, NON i contributi integrativi addebitati ai clienti
 - Hai i modelli F24 o bollettini dei versamenti?
 
+MECCANISMO ACCONTO/SALDO CONTRIBUTI GESTIONE SEPARATA — REGOLA TECNICA IMPORTANTE:
+I contributi versati nell'anno dichiarato (es. tramite F24 a giugno e novembre) NON sono un pagamento a fronte del reddito di quello stesso anno — sono SALDO dell'anno precedente + ACCONTI per l'anno in corso (tipicamente l'80% del dovuto dell'anno precedente, diviso in due rate). Il VERO saldo dei contributi dell'anno che stai dichiarando si calcola SOLO ORA, in dichiarazione: dovuto reale dell'anno (aliquota x reddito imponibile dell'anno) MENO acconti già versati per quell'anno. NON confrontare mai l'importo versato durante l'anno con il dovuto teorico dell'anno stesso come se fosse un debito immediato — è un errore concettuale. Calcola invece: contributi dovuti per l'anno dichiarato (aliquota x reddito imponibile) meno la quota di acconti versati che si riferisce specificamente a quell'anno (se il contribuente non sa distinguere saldo da acconti nei versamenti fatti, chiedi di scomporli, o segnala che è necessario verificare sul cassetto previdenziale INPS quanto è saldo e quanto acconto).
+
 STORICO FISCALE:
 - Hai la dichiarazione dei redditi dell'anno precedente con il quadro LM?
 - Hai versato acconti di imposta sostitutiva a giugno e novembre? Importi esatti?
